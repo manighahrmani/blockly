@@ -10,7 +10,7 @@ After cloning and navigating to this fork of Blockly, make the desired changes t
 
 ### 2. Build Blockly
 
-Compile the TypeScript into JavaScript:
+Compile the TypeScript files in the `core` folder into JavaScript files located in the `build` folder with:
 
 ```bash
 npm install
@@ -19,19 +19,29 @@ npm run build
 
 ### 3. Linking the Modified Blockly to Your Node.js Project
 
-#### Create a Local npm Link
+#### Create a Local npm Link and Link Blockly to Your Node.js Project
 
+First, create a local npm link to the modified Blockly build:
 ```bash
-cd path/to/your/blockly/build/src
+cd build/src
 npm link
 ```
-
-#### Link Blockly to Your Node.js Project
-
-Navigate to your Node.js project directory and run:
+Then navigate to your Node.js project directory and run:
 
 ```bash
 npm link blockly
+```
+
+### Or use the compressed version
+
+Use the files in the `dist` folder to replace the files in your project. For example, copy `dist/blockly_compressed.js`, `dist/blocks_compressed.js`, and `dist/python_compressed.js` to your project's `lib` folder with:
+    
+```bash
+project_path="path/to/your/project/lib"
+
+cp dist/blockly_compressed.js $project_path
+cp dist/blocks_compressed.js $project_path
+cp dist/python_compressed.js $project_path
 ```
 
 ### 4. Using the Linked Blockly in Your Project
