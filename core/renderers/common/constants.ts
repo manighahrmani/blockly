@@ -150,7 +150,7 @@ export class ConstantProvider {
   DUMMY_INPUT_SHADOW_MIN_HEIGHT: number;
 
   /** Rounded corner radius. */
-  CORNER_RADIUS = 8;
+  CORNER_RADIUS = 0;
 
   /**
    * Offset from the left side of a block or the inside of a statement input
@@ -183,12 +183,12 @@ export class ConstantProvider {
 
   SPACER_DEFAULT_HEIGHT = 15;
 
-  MIN_BLOCK_HEIGHT = 24;
+  MIN_BLOCK_HEIGHT = 48;
 
-  EMPTY_INLINE_INPUT_PADDING = 14.5;
+  EMPTY_INLINE_INPUT_PADDING = 24.5;
   EMPTY_INLINE_INPUT_HEIGHT: number;
 
-  EXTERNAL_VALUE_INPUT_PADDING = 2;
+  EXTERNAL_VALUE_INPUT_PADDING = 22;
   EMPTY_STATEMENT_INPUT_HEIGHT: number;
   START_POINT: string;
 
