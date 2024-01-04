@@ -53,7 +53,7 @@ const Blockly = require('blockly');
 // Use Blockly as you normally would
 ```
 
-### 5. Keep Your Fork Updated
+### 5. Keep this Fork Updated with the Original Blockly Repository
 
 Keep your fork in sync with the original Blockly repository:
 
