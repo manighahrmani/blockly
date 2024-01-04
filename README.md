@@ -32,10 +32,10 @@ Then navigate to your Node.js project directory and run:
 npm link blockly
 ```
 
-### Or use the compressed version
+### 4. Use the Compressed Version
 
 Use the files in the `dist` folder to replace the files in your project. For example, copy `dist/blockly_compressed.js`, `dist/blocks_compressed.js`, and `dist/python_compressed.js` to your project's `lib` folder with:
-    
+
 ```bash
 project_path="path/to/your/project/lib"
 
@@ -44,7 +44,7 @@ cp dist/blocks_compressed.js $project_path
 cp dist/python_compressed.js $project_path
 ```
 
-### 4. Using the Linked Blockly in Your Project
+### 5. Using the Linked Blockly in Your Project
 
 Now, you can use Blockly in your Node.js project:
 
@@ -53,7 +53,7 @@ const Blockly = require('blockly');
 // Use Blockly as you normally would
 ```
 
-### 5. Keep this Fork Updated with the Original Blockly Repository
+### 6. Keep This Fork Updated with the Original Blockly Repository
 
 Keep your fork in sync with the original Blockly repository:
 
