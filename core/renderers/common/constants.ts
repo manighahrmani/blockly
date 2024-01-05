@@ -150,7 +150,7 @@ export class ConstantProvider {
   DUMMY_INPUT_SHADOW_MIN_HEIGHT: number;
 
   /** Rounded corner radius. */
-  CORNER_RADIUS = 0;
+  CORNER_RADIUS = 8;
 
   /**
    * Offset from the left side of a block or the inside of a statement input
